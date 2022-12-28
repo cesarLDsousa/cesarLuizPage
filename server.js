@@ -13,14 +13,14 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/public/index.html')
 })
 
-app.post('/cesarLuizPage/public/', (req, res)=>{
+app.post('/', (req, res)=>{
     console.log(req.body)
 
     const transporter = nodeMailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'cesarluiz.git@gmail.com',
-            pass: 'esohvojxlfhlzvtk'
+            user: 'email@gmail.com',
+            pass: 'gmail-app-pass'
         }
     })
 
