@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/public/index.html')
 })
 
-app.post('/', (req, res)=>{
+app.post('/cesarLuizPage/public/', (req, res)=>{
     console.log(req.body)
 
     const transporter = nodeMailer.createTransport({
